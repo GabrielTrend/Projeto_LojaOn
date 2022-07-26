@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color: #302c2c;
+    color: #707070;
 }
 
 body {
@@ -19,6 +19,9 @@ a:hover{
     color: #fff;
 }
 
+.h2, h2 {
+    font-size: 2.4rem;
+}
 
 /*---------------Menu--------------*/
 .header {
@@ -127,9 +130,8 @@ a:hover{
 
 .hero__title {
     width: 100%;
-    font-size: 2rem;
+    font-size: calc(36px + 18 * ((100vw - 576px) / 1024));
     font-weight: 900;
-    text-transform: uppercase;
     background-image: linear-gradient(147deg, #e0bb64, #946f07);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -152,16 +154,15 @@ a:hover{
     width: 100%;
     max-width: 100%;
     border: none;
-    background-color:#ff8800;
+    background-image: linear-gradient(147deg, #e0bb64, #946f07);
     border-radius: 5px;
-    padding: 20px 40px;
+    padding: 12px 39px;
     display: flex;
     color: white;
     text-decoration: none;
     font-size: 1.625rem;
     font-weight: 600;
     text-transform: uppercase;
-    box-shadow: 0px 0px 20px #ff8800;
     align-items: center;
     letter-spacing: 0.125rem;
 }
@@ -203,13 +204,17 @@ a:hover{
 
 /*----TE CONHEÇO---------*/
 .section_conheco{
-    padding: 100px 0 0 0;
+    padding: 100px 0;
     text-align: justify;
 
 }
+.section_conheco h2 {
+    font-weight: 800;
+    color: #484848;
+}
 /*-------COMO FUNCIONA-----*/
 .section_como_func{
-    padding: 100px 0 0 0;
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
     text-align: justify;
@@ -220,15 +225,25 @@ a:hover{
     text-align: center;
     align-items: center;
 }
-
+.texto_video h2 {
+    background-image: linear-gradient(147deg, #e0bb64, #946f07);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    text-shadow: 4px 3px 4px rgb(0 0 0 / 16%);
+}
 .texto_video p{
     margin-top: 30px;
     text-align: justify;
+    color: white;
 }
 
 
 .section_como_func h2{
  text-align: center;
+ color: #484848;
+ font-weight: 800;
 }
 
 section iframe{
@@ -263,8 +278,10 @@ section iframe{
 }
 
 .title_faq {
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin: 2rem 0rem;
+    font-weight: 800;
+    color: #484848;
 }
 
 .faq {
@@ -338,7 +355,8 @@ svg {
 
 /*---------Cards Videos---------*/
 .section_descubra{
-    padding: 100px 0 0 0;
+    padding: 100px 0;
+    background: url(../img/bg.jpg);
 }
 
 .galeria_video{
@@ -416,6 +434,7 @@ svg {
     margin: 2rem auto;
     max-width: 780px;
     display: block;
+    color:  white;
 }
 
 .div_p_video{
@@ -440,8 +459,10 @@ svg {
 }
 
 .section_planos h1{
-    font-size: 2rem;
+    font-size: 2.4rem;
     text-align: center;
+    font-weight: 800;
+    color: #484848;
 }
 .cards {
     display: flex;
@@ -497,15 +518,15 @@ main.cards section.card_plano:first-child {
     font-size: 80%;
     font-weight: 600;
     color: #fff;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .card_plano.mensal button {
-    background:#ff8800
+    background-image: linear-gradient(147deg, #e0bb64, #946f07);
 }
 
-.card_plano.anual button {
-    background:#ff8800
-}
+.card_plano.anual button {background-image: linear-gradient(147deg, #e0bb64, #946f07);}
 
 .card_plano button:hover{
     background-color: #ffac4e;
@@ -533,8 +554,10 @@ main.cards section.card_plano:first-child {
 }
 
 .slide-container h1{
-    text-transform: uppercase;
     text-align: center;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #484848;
 }
 
 .slide-content {
@@ -554,6 +577,7 @@ main.cards section.card_plano:first-child {
     flex-direction: column;
     align-items: center;
     padding: 10px 14px;
+    background: transparent;
 }
 
 .image-content {
@@ -568,8 +592,7 @@ main.cards section.card_plano:first-child {
     top: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, #ff8800, #ffd18b);
-    
+    background: linear-gradient(147deg, #e0bb64, #946f07);
     border-radius: 25px 25px 0 25px;
 }
 
@@ -581,7 +604,6 @@ main.cards section.card_plano:first-child {
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background:#ffd18b;
 }
 
 .overlay::after {
@@ -603,7 +625,6 @@ main.cards section.card_plano:first-child {
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #4070F4;
 }
 
 .name {
@@ -694,10 +715,15 @@ main.cards section.card_plano:first-child {
     padding: 50px;
 }
 
-.texto_geisa h1{
-    color: white;
-    font-size: 2.5rem;
+.texto_geisa h1 {
+    font-size: 2.4rem;
     letter-spacing: 0.5rem;
+    font-weight: 900;
+    background-image: linear-gradient(147deg, #e0bb64, #946f07);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 4px 3px 4px rgb(0 0 0 / 16%);
 }
 
 .texto_geisa p{
@@ -749,7 +775,7 @@ main.cards section.card_plano:first-child {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #ff8800;
+    background: linear-gradient(147deg, #e0bb64, #946f07);
     height: 2px;
     box-sizing: border-box;
     width: 50px;
